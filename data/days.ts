@@ -80,12 +80,10 @@ export const days = [
   },
   {
     day: 12,
-    title: "Neugier",
-    text: "Etwas rückt näher. Vielleicht hast du es schon geahnt?",
-    image: "/images/question.png",
+    title: "Dankbarkeit",
+    text: "Manchmal vergisst man, wie weit man schon gekommen ist. Heute darfst du stolz auf dich sein.",
+    image: "/images/star2.png",
     unlockDate: "2025-12-12",
-    isSpecial: true,
-    specialImage: "/images/spiel.jpg",
   },
   {
     day: 13,
@@ -124,10 +122,12 @@ export const days = [
   },
   {
     day: 18,
-    title: "Dankbarkeit",
-    text: "Manchmal vergisst man, wie weit man schon gekommen ist. Heute darfst du stolz auf dich sein.",
-    image: "/images/star2.png",
+    title: "Neugier",
+    text: "Etwas rückt näher. Vielleicht hast du es schon geahnt?",
+    image: "/images/question.png",
     unlockDate: "2025-12-18",
+    isSpecial: true,
+    specialImage: "/images/spiel.jpg",
   },
   {
     day: 19,
