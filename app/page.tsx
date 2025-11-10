@@ -92,6 +92,12 @@ export default function HomePage() {
         </p>
       </motion.div>
 
+      <motion.footer
+        className="mt-16 text-xs text-yellow-100/60"
+      >
+        Created with 💛 by Gunnar
+      </motion.footer>
+
       <style jsx global>{`
         @keyframes snow {
           0% {
