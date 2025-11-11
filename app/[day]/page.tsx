@@ -198,14 +198,23 @@ export default function DayPage({
                     >
                         🌅 Unsere Reise beginnt bald. 🚢
                     </motion.h3>
-
-                    <motion.img
-                        src="./images/Logo_AIDA_Cruises.svg"
-                        className="w-26 h-26 mt-4 mx-auto opacity-90"
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        transition={{ delay: 5, duration: 1.5 }}
-                    />
+                    <div className="flex justify-center items-center space-x-6 mt-4">
+                        <motion.img
+                            src="./images/Logo_AIDA_Cruises.svg"
+                            className="h-12 w-auto opacity-90"
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ delay: 5, duration: 1.5 }}
+                        />
+                        
+                        <motion.img
+                            src="./images/Mein_Schiff_Logo_2020.png"
+                            className="h-12 w-auto opacity-90"
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ delay: 5, duration: 1.5 }}
+                        />
+                    </div>
                 </div>
 
                 <motion.button
