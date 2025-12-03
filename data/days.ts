@@ -23,7 +23,7 @@ export const days = [
   {
     day: 4,
     title: "Erinnerungen",
-    text: "Hast du gemerkt, wie weit du gekommen bist? So vieles liegt hinter dir – und noch Schöneres vor dir.",
+    text: "Manchmal merkst du gar nicht was du schon geschafft hast. Ich bin stolz auf dich!",
     image: "/images/footprints.png",
     unlockDate: "2025-12-04",
   },
@@ -46,14 +46,14 @@ export const days = [
   {
     day: 7,
     title: "Mut",
-    text: "Du hast so vieles geschafft, was unmöglich schien. Und jetzt darfst du genießen, was kommt.",
+    text: "Du hast so vieles geschafft, was unmöglich schien. Und jetzt genießen wir, was vor uns liegt. Ich liebe dich! <3",
     image: "/images/heart.png",
     unlockDate: "2025-12-07",
   },
   {
     day: 8,
     title: "Licht und Liebe",
-    text: "Ein Lichtlein brennt – und mit ihm wächst die Wärme, die du verdienst.",
+    text: "Ich Liebe Dich über alles! Für immer!",
     image: "/images/candle2.png",
     unlockDate: "2025-12-08",
   },
@@ -74,7 +74,7 @@ export const days = [
   {
     day: 11,
     title: "Wärme im Herzen",
-    text: "Draußen wird’s kälter, drinnen wird’s wärmer. Und irgendwo dazwischen: du.",
+    text: "Draußen wird es kälter, drinnen wird es wärmer. Kuschelzeit!",
     image: "/images/fireplace.png",
     unlockDate: "2025-12-11",
   },
@@ -102,7 +102,7 @@ export const days = [
   {
     day: 15,
     title: "Kraft",
-    text: "Du hast so viel getragen. Jetzt darfst du loslassen und durchatmen.",
+    text: "Ich liebe dich. Ich bin unglaublich stolz darauf wieviel Kraft du hast. Du bist mein Held!",
     image: "/images/mountain.png",
     unlockDate: "2025-12-15",
   },
@@ -132,7 +132,7 @@ export const days = [
   {
     day: 19,
     title: "Träume",
-    text: "Die besten Geschichten beginnen mit einem Traum – und du bist mitten in einer.",
+    text: "Die besten Geschichten beginnen mit einem Traum – und du bist mein Traum! Meine Traumfrau!! <3",
     image: "/images/moon.png",
     unlockDate: "2025-12-19",
   },
