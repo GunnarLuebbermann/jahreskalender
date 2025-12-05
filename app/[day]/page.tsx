@@ -64,10 +64,20 @@ export default function DayPage({
                         </motion.p>
 
                         {/* 🎁 Spezieller Geschenkbereich */}
-                        {content.isSpecial && (
+                        {content.isSpecial && content.specialImage && (
                             <SpecialGiftBox
                                 boxImage={"/images/giftbox_main.png"}
                                 revealImage={content.specialImage}
+                            />
+                        )}
+                        {content.isSpecial && content.myImage && (
+                            <motion.img
+                                src={content.myImage}
+                                alt="Special moment"
+                                className="mt-6 w-full rounded-lg shadow-xl"
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 1, duration: 0.6 }}
                             />
                         )}
                     </motion.div>

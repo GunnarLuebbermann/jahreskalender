@@ -45,10 +45,12 @@ export const days = [
   },
   {
     day: 7,
-    title: "Mut",
-    text: "Du hast so vieles geschafft, was unmöglich schien. Und jetzt genießen wir, was vor uns liegt. Ich liebe dich! <3",
+    title: "Lachen",
+    text: "Zusammen lacht es sich am besten!",
     image: "/images/heart.png",
     unlockDate: "2025-12-07",
+    isSpecial: true,
+    myImage: "/images/laugh.jpg",
   },
   {
     day: 8,
@@ -59,9 +61,9 @@ export const days = [
   },
   {
     day: 9,
-    title: "Leise Gedanken",
-    text: "Vielleicht ist Glück einfach nur das Gefühl, zur Ruhe zu kommen.",
-    image: "/images/book.png",
+    title: "Mut",
+    text: "Du hast so vieles geschafft, was unmöglich schien. Und jetzt genießen wir, was vor uns liegt. Ich liebe dich! <3",
+    image: "/images/heart.png",
     unlockDate: "2025-12-09",
   },
   {
@@ -112,6 +114,8 @@ export const days = [
     text: "Je näher Weihnachten kommt, desto heller wird alles um dich herum.",
     image: "/images/tree.png",
     unlockDate: "2025-12-16",
+    isSpecial: true,
+    myImage: "/images/kuessen.jpg",
   },
   {
     day: 17,
