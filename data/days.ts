@@ -70,7 +70,7 @@ export const days = [
     day: 10,
     title: "Goldene Zeiten",
     text: "Manchmal kündigt sich das Beste im Leben ganz leise an.",
-    image: "/images/gift.png",
+    image: "/images/giftbox.png",
     unlockDate: "2025-12-10",
   },
   {
