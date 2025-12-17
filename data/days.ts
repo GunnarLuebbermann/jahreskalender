@@ -126,8 +126,8 @@ export const days = [
   },
   {
     day: 18,
-    title: "Neugier",
-    text: "Etwas rückt näher. Vielleicht hast du es schon geahnt?",
+    title: "Liebe",
+    text: "Wir werden mal schlechte Tage haben. Wir werden mal genervt voneinander sein. Wir werden uns mal streiten. Aber eines sollst du immer wissen: Ich liebe dich!  Genauso, wie du bist! Ich bleibe bei dir! Für immer!",
     image: "/images/question.png",
     unlockDate: "2025-12-18",
     isSpecial: true,
