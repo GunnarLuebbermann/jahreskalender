@@ -197,7 +197,7 @@ export default function DayPage({
                         animate={{ opacity: 1 }}
                         transition={{ delay: 3, duration: 1.5 }}
                     >
-                        Jetzt wartet das Leben – voller Licht, Wärme und neuer Horizonte.
+                        Jetzt warten neue wundervolle Erinnerungen auf uns!
                     </motion.p>
 
                     <motion.h3
@@ -206,7 +206,7 @@ export default function DayPage({
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 5, duration: 1.5 }}
                     >
-                        🌅 Unsere Reise beginnt bald. 🚢
+                        🌅 Unsere Reise beginnt bald. 🚢 Ich Liebe Dich!!
                     </motion.h3>
                     <div className="flex justify-center items-center space-x-6 mt-4">
                         <motion.img
