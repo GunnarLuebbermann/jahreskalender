@@ -30,11 +30,15 @@ const komplimente = [
 // Generiere 365 Tage für das Jahr 2026
 export const days = Array.from({ length: 365 }, (_, i) => {
   const year = 2026;
-  const date = new Date(year, 0, i + 1); // 0 = Januar, i+1 = Tag im Jahr (1-365)
+  // Starte am 1. Januar 2026 und addiere i Tage
+  const date = new Date(2026, 0, 1); // 1. Januar 2026
+  date.setDate(date.getDate() + i); // Addiere i Tage (0 für den ersten Tag)
   
   const month = date.getMonth() + 1; // 1-12
   const dayOfMonth = date.getDate(); // 1-31
-  const dateString = date.toISOString().split('T')[0];
+  
+  // Formatiere Datum manuell um Zeitzonenproblemen vorzubeugen
+  const dateString = `${year}-${month.toString().padStart(2, '0')}-${dayOfMonth.toString().padStart(2, '0')}`;
   
   // Eindeutige ID: MMDD (z.B. 0101, 0102, 1231)
   const id = `${month.toString().padStart(2, '0')}${dayOfMonth.toString().padStart(2, '0')}`;
