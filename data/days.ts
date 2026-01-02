@@ -1,177 +1,61 @@
-export const days = [
-  {
-    day: 1,
-    title: "Ein neuer Dezember",
-    text: "Ein neuer Monat beginnt – mit Lichtern, Wärme und Vorfreude. Etwas Schönes wartet auf dich.",
-    image: "/images/candle.png",
-    unlockDate: "2025-12-01",
-  },
-  {
-    day: 2,
-    title: "Funkelnde Augenblicke",
-    text: "Manchmal sind es die kleinen Lichter, die den Weg durch die Dunkelheit weisen.",
-    image: "/images/star.png",
-    unlockDate: "2025-12-02",
-  },
-  {
-    day: 3,
-    title: "Zeit für dich",
-    text: "Der Dezember erinnert uns daran, kurz innezuhalten. Nur du, eine Tasse Tee und der Gedanke an etwas Wundervolles.",
-    image: "/images/tea.png",
-    unlockDate: "2025-12-03",
-  },
-  {
-    day: 4,
-    title: "Erinnerungen",
-    text: "Manchmal merkst du gar nicht was du schon geschafft hast. Ich bin stolz auf dich!",
-    image: "/images/footprints.png",
-    unlockDate: "2025-12-04",
-  },
-  {
-    day: 5,
-    title: "Ein Hauch von Magie",
-    text: "Draußen wird es still – und doch liegt etwas in der Luft. Etwas, das nur du spüren kannst.",
-    image: "/images/snowflake.png",
-    unlockDate: "2025-12-05",
-  },
-  {
-    day: 6,
-    title: "Kleines Glück",
-    text: "Heute ist Nikolaus – vielleicht steckt mehr in kleinen Überraschungen, als man denkt.",
-    image: "/images/boot.png",
-    unlockDate: "2025-12-06",
-    isSpecial: true,
-    specialImage: "/images/rituals_set.jpg",
-  },
-  {
-    day: 7,
-    title: "Lachen",
-    text: "Zusammen lacht es sich am besten!",
-    image: "/images/heart.png",
-    unlockDate: "2025-12-07",
-    isSpecial: true,
-    myImage: "/images/laugh.jpg",
-  },
-  {
-    day: 8,
-    title: "Licht und Liebe",
-    text: "Ich Liebe Dich über alles! Für immer!",
-    image: "/images/candle2.png",
-    unlockDate: "2025-12-08",
-  },
-  {
-    day: 9,
-    title: "Mut",
-    text: "Du hast so vieles geschafft, was unmöglich schien. Und jetzt genießen wir, was vor uns liegt. Ich liebe dich! <3",
-    image: "/images/heart.png",
-    unlockDate: "2025-12-09",
-  },
-  {
-    day: 10,
-    title: "Goldene Zeiten",
-    text: "Manchmal kündigt sich das Beste im Leben ganz leise an.",
-    image: "/images/giftbox.png",
-    unlockDate: "2025-12-10",
-  },
-  {
-    day: 11,
-    title: "Wärme im Herzen",
-    text: "Draußen wird es kälter, drinnen wird es wärmer. Kuschelzeit!",
-    image: "/images/fireplace.png",
-    unlockDate: "2025-12-11",
-  },
-  {
-    day: 12,
-    title: "Dankbarkeit",
-    text: "Manchmal vergisst man, wie weit man schon gekommen ist. Heute darfst du stolz auf dich sein.",
-    image: "/images/star2.png",
-    unlockDate: "2025-12-12",
-  },
-  {
-    day: 13,
-    title: "Freude teilen",
-    text: "Manchmal ist das Schönste am Schenken das Strahlen in den Augen des anderen.",
-    image: "/images/ribbon.png",
-    unlockDate: "2025-12-13",
-  },
-  {
-    day: 14,
-    title: "Der Weg",
-    text: "Manchmal führt uns das Leben auf Umwege – nur um uns etwas Wunderschönes zu zeigen.",
-    image: "/images/path.png",
-    unlockDate: "2025-12-14",
-  },
-  {
-    day: 15,
-    title: "Kraft",
-    text: "Ich liebe dich. Ich bin unglaublich stolz darauf wieviel Kraft du hast. Du bist mein Held!",
-    image: "/images/mountain.png",
-    unlockDate: "2025-12-15",
-  },
-  {
-    day: 16,
-    title: "Vorfreude",
-    text: "Je näher Weihnachten kommt, desto heller wird alles um dich herum.",
-    image: "/images/tree.png",
-    unlockDate: "2025-12-16",
-    isSpecial: true,
-    myImage: "/images/kuessen.jpg",
-  },
-  {
-    day: 17,
-    title: "Leichtigkeit",
-    text: "Ein Tag ohne Sorgen – das ist vielleicht das schönste Geschenk.",
-    image: "/images/feather.png",
-    unlockDate: "2025-12-17",
-  },
-  {
-    day: 18,
-    title: "Liebe",
-    text: "Wir werden mal schlechte Tage haben. Wir werden mal genervt voneinander sein. Wir werden uns mal streiten. Aber eines sollst du immer wissen: Ich liebe dich!  Genauso, wie du bist! Ich bleibe bei dir! Für immer!",
-    image: "/images/question.png",
-    unlockDate: "2025-12-18",
-    isSpecial: true,
-    specialImage: "/images/spiel.jpg",
-  },
-  {
-    day: 19,
-    title: "Träume",
-    text: "Die besten Geschichten beginnen mit einem Traum – und du bist mein Traum! Meine Traumfrau!! <3",
-    image: "/images/moon.png",
-    unlockDate: "2025-12-19",
-  },
-  {
-    day: 20,
-    title: "Herzenszeit",
-    text: "Die Tage werden kürzer, die Nähe größer. Genieße, was wirklich zählt.",
-    image: "/images/heart2.png",
-    unlockDate: "2025-12-20",
-  },
-  {
-    day: 21,
-    title: "Geheimnisvoll",
-    text: "Ein kleines Rätsel bleibt noch ungelöst … aber bald wird alles klar.",
-    image: "/images/key.png",
-    unlockDate: "2025-12-21",
-  },
-  {
-    day: 22,
-    title: "Fast soweit",
-    text: "Nur noch ein paar Türchen – dann wartet etwas Besonderes auf dich.",
-    image: "/images/bell.png",
-    unlockDate: "2025-12-22",
-  },
-  {
-    day: 23,
-    title: "Ein letzter Hinweis",
-    text: "Morgen ist es soweit. Pack deinen Mut – und vielleicht auch deinen Koffer.",
-    image: "/images/suitcase.png",
-    unlockDate: "2025-12-23",
-  },
-  {
-    day: 24,
-    image: "/images/hat.png",
-    unlockDate: "2025-12-24",
-    isFinal: true,
-  },
+const sprueche = [
+  "Du bist stärker als du denkst.",
+  "Jeder Tag mit dir ist ein Geschenk.",
+  "Dein Lächeln erhellt meinen Tag.",
+  "Du schaffst das!",
+  "Gemeinsam sind wir unschlagbar.",
+  "Du bist etwas ganz Besonderes.",
+  "Ich glaube an dich!",
+  "Mit dir ist alles besser.",
+  "Du bist meine Inspiration.",
+  "Heute ist dein Tag!",
 ];
+
+const komplimente = [
+  "Deine Augen funkeln wie Sterne.",
+  "Du hast das schönste Lachen der Welt.",
+  "Du bist unglaublich klug und talentiert.",
+  "Deine Stärke beeindruckt mich jeden Tag.",
+  "Du hast ein Herz aus Gold.",
+  "Mit dir fühle ich mich zuhause.",
+  "Du bist wunderschön, innen und außen.",
+  "Deine Umarmungen sind die besten.",
+  "Du machst die Welt zu einem besseren Ort.",
+  "Ich bin so stolz auf dich!",
+  "Ich liebe dich!",
+  "Ich liebe dein Lachen.",
+  "Du bist mein Lieblingsmensch.",
+];
+
+// Generiere 365 Tage für das Jahr 2026
+export const days = Array.from({ length: 365 }, (_, i) => {
+  const year = 2026;
+  const date = new Date(year, 0, i + 1); // 0 = Januar, i+1 = Tag im Jahr (1-365)
+  
+  const month = date.getMonth() + 1; // 1-12
+  const dayOfMonth = date.getDate(); // 1-31
+  const dateString = date.toISOString().split('T')[0];
+  
+  // Eindeutige ID: MMDD (z.B. 0101, 0102, 1231)
+  const id = `${month.toString().padStart(2, '0')}${dayOfMonth.toString().padStart(2, '0')}`;
+  
+  // Monatsnamen
+  const monthNames = [
+    "Januar", "Februar", "März", "April", "Mai", "Juni",
+    "Juli", "August", "September", "Oktober", "November", "Dezember"
+  ];
+  
+  const spruchIndex = i % sprueche.length;
+  const komplimentIndex = i % komplimente.length;
+  
+  return {
+    id, // z.B. "0101" für 1. Januar
+    day: i + 1, // 1-365 (Tag im Jahr)
+    month,
+    dayOfMonth,
+    title: `${dayOfMonth}. ${monthNames[month - 1]}`,
+    text: sprueche[spruchIndex],
+    compliment: komplimente[komplimentIndex],
+    unlockDate: dateString,
+  };
+});
