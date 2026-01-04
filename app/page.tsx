@@ -59,7 +59,7 @@ export default function HomePage() {
       </div>
 
       <motion.div
-        className="grid grid-cols-7 sm:grid-cols-10 gap-2 justify-items-center relative z-10 max-w-6xl mx-auto"
+        className="grid grid-cols-7 sm:grid-cols-10 gap-3 sm:gap-2 justify-items-center relative z-10 max-w-6xl mx-auto"
         initial="hidden"
         animate="visible"
         variants={{
