@@ -32,11 +32,32 @@ export default function DayPage({
                 initial={{ rotateY: 180, opacity: 0 }}
                 animate={{ rotateY: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className={`bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-8 max-w-md border-2 ${colors.border}`}
+                className={`bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-8 max-w-md border-2 ${content.isSpecial ? 'border-yellow-400 ring-4 ring-yellow-400/50' : colors.border}`}
             >
 
+                {/* Spezieller Tag Banner */}
+                {content.isSpecial && (
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+                        className="mb-6"
+                    >
+                        <motion.div
+                            animate={{ scale: [1, 1.2, 1] }}
+                            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                            className="text-6xl mb-3"
+                        >
+                            {content.specialEmoji}
+                        </motion.div>
+                        <h1 className="text-2xl font-bold text-yellow-300 drop-shadow-lg">
+                            {content.specialTitle}
+                        </h1>
+                    </motion.div>
+                )}
+
                 <motion.h2
-                    className={`text-3xl font-bold mb-4 ${colors.text}`}
+                    className={`text-3xl font-bold mb-1 ${colors.text}`}
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
@@ -44,12 +65,36 @@ export default function DayPage({
                     {content.title}
                 </motion.h2>
 
+                <motion.p
+                    className={`text-sm ${colors.accent} mb-4 font-medium`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.6 }}
+                >
+                    {content.weekday}
+                </motion.p>
+
+                {/* Spezielle Nachricht */}
+                {content.isSpecial && content.specialMessage && (
+                    <motion.div
+                        className="mb-6 p-5 bg-yellow-400/20 rounded-xl border-2 border-yellow-400/50"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.6 }}
+                    >
+                        <p className="text-sm text-yellow-300 font-semibold mb-2">✨ Besonderer Tag ✨</p>
+                        <p className={`text-lg ${colors.text} leading-relaxed`}>
+                            {content.specialMessage}
+                        </p>
+                    </motion.div>
+                )}
+
                 {/* Spruch */}
                 <motion.div
                     className={`mb-6 p-4 ${colors.boxBg} rounded-xl border ${colors.boxBorder}`}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.7 }}
+                    transition={{ delay: content.isSpecial ? 0.9 : 0.7 }}
                 >
                     <p className={`text-sm ${colors.accent} font-semibold mb-1`}>💭 Spruch des Tages</p>
                     <p className={`text-lg ${colors.text} italic`}>
@@ -62,7 +107,7 @@ export default function DayPage({
                     className={`p-4 ${colors.boxBg} rounded-xl border ${colors.boxBorder}`}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.9 }}
+                    transition={{ delay: content.isSpecial ? 1.1 : 0.9 }}
                 >
                     <p className={`text-sm ${colors.accent} font-semibold mb-1`}>💝 Dein Kompliment</p>
                     <p className={`text-lg ${colors.text} italic`}>

@@ -12,6 +12,7 @@ import { getTodayString, getCurrentMonth, isUnlocked } from "./lib/dateUtils";
 export default function HomePage() {
   const [selectedMonth, setSelectedMonth] = useState(1);
   const [todayString, setTodayString] = useState('');
+  const [hasInteracted, setHasInteracted] = useState(false);
   const gridRef = useRef<HTMLDivElement>(null);
 
   // Client-seitiges Datum setzen
@@ -30,13 +31,6 @@ export default function HomePage() {
   // Berechne Fortschritt
   const unlockedDays = days.filter(d => isUnlocked(d.unlockDate, todayString));
   const progress = (unlockedDays.length / days.length) * 100;
-
-  // Smooth Scroll zu heute beim Monatswechsel
-  useEffect(() => {
-    if (gridRef.current) {
-      gridRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }, [selectedMonth]);
 
   return (
     <main className={`min-h-screen bg-gradient-to-b ${colors.background} text-center p-6 relative overflow-hidden transition-colors duration-700`}>
@@ -83,7 +77,7 @@ export default function HomePage() {
         {MONTH_NAMES.map((month, index) => (
           <button
             key={month}
-            onClick={() => setSelectedMonth(index + 1)}
+            onClick={() => { setHasInteracted(true); setSelectedMonth(index + 1); }}
             className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
               selectedMonth === index + 1
                 ? colors.monthButton + " shadow-lg"
@@ -108,23 +102,34 @@ export default function HomePage() {
         {daysInMonth.map((d) => {
           const unlocked = isUnlocked(d.unlockDate, todayString);
           const isToday = d.unlockDate === todayString;
+          const isSpecial = d.isSpecial;
 
           return (
             <motion.div
               key={d.id}
               className={`aspect-square w-12 sm:w-14 rounded-xl border-2 flex flex-col items-center justify-center shadow-lg transition-all duration-300 relative
     ${unlocked
-                  ? `${colors.button} ${colors.border} text-white cursor-pointer hover:scale-110`
+                  ? `${colors.button} ${isSpecial ? 'border-yellow-400' : colors.border} text-white cursor-pointer hover:scale-110`
                   : `${colors.buttonInactive} text-gray-400 cursor-not-allowed`
                 }
-    ${isToday ? 'ring-4 ring-yellow-400 ring-opacity-75' : ''}`}
+    ${isToday ? 'ring-4 ring-yellow-400 ring-opacity-75' : ''}
+    ${isSpecial && !isToday ? 'ring-4 ring-yellow-400/60 ring-opacity-60' : ''}`}
               whileHover={unlocked ? { scale: 1.1 } : {}}
             >
               {isToday && (
                 <motion.div
-                  className="absolute -top-2 -right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-0.5 rounded-full shadow-lg"
+                  className="absolute -top-2 -right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-0.5 rounded-full shadow-lg z-10"
                 >
                   Heute
+                </motion.div>
+              )}
+              {isSpecial && !isToday && (
+                <motion.div
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute -top-2 -right-2 text-sm z-10"
+                >
+                  {d.specialEmoji}
                 </motion.div>
               )}
               <Link href={unlocked ? `/${d.id}` : "#"} className="flex flex-col items-center w-full h-full justify-center">
