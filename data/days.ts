@@ -334,6 +334,10 @@ const neueSprueche = [
 
 // Neue erweiterte Komplimente ab 14. April 2026
 const neueKomplimente = [
+  "Auch in schweren Zeiten bin ich immer für dich da!",
+  "Du bist die schönste Person, die ich kenne.",
+  "Ich liebe deine Augen <3",
+  "Deine Ausstrahlung ist einzigartig.",
   "Deine Haare sehen heute besonders schön aus.",
   "Du hast die perfekte Mischung aus Stärke und Sanftheit.",
   "Dein Stil ist einfach unverwechselbar.",
@@ -347,7 +351,7 @@ const neueKomplimente = [
   "Du hast die schönste Seele, die ich kenne.",
   "Deine Leidenschaft für die Dinge, die du liebst, ist bewundernswert.",
   "Du bist so aufmerksam und fürsorglich.",
-  "Dein Lächeln verzaubert mich jedes Mal aufs Neue.",
+  "Dein Lächeln verzaubert mich jedes Mal aufs Neue!!",
   "Du hast eine Aura, die alle anzieht.",
   "Deine Intelligenz beeindruckt mich immer wieder.",
   "Du bist der wunderbarste Mensch in meinem Leben.",
