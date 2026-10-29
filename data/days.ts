@@ -456,6 +456,11 @@ const specialDays: Record<string, { specialEmoji: string; specialTitle: string; 
     specialTitle: "Silvester! 🎇",
     specialMessage: "Ein weiteres wundervolles Jahr mit dir geht zu Ende. Danke für jeden Moment, jedes Lachen und jede Umarmung. Auf ein großartiges neues Jahr! 🎇💛",
   },
+  "1129": {
+    specialEmoji: "🎂",
+    specialTitle: "Happy Birthday, Isi! 🎉",
+    specialMessage: "Alles Gute zum Geburtstag, mein Lieblingsmensch! ❤️🎂🥰 Ich wünsche dir von ganzem Herzen nur das Allerschönste auf dieser Welt, ganz viel Glück, Gesundheit, Liebe und unzählige Momente, die dich glücklich machen. ❤️ Ich bin so unendlich dankbar, dass es dich gibt und dass ich mein Leben mit dir teilen darf. Du bist nicht nur meine große Liebe, sondern auch mein Zuhause, mein Glück und der Mensch, mit dem ich all die kleinen und großen Momente des Lebens erleben möchte. ❤️ Ich wünsche mir nichts mehr, als dich glücklich zu sehen, mit dir zu lachen, Erinnerungen zu sammeln und noch unendlich viele Geburtstage an deiner Seite zu feiern. 🥰 Du bist das Beste, was mir passieren konnte, und ich hoffe, dass ich dir jeden Tag ein kleines bisschen von dem zurückgeben kann, was du mir bedeutest. Ich liebe dich mehr, als Worte jemals ausdrücken könnten. ❤️😘",
+  },
 };
 
 // Generiere 365 Tage für das Jahr 2026
